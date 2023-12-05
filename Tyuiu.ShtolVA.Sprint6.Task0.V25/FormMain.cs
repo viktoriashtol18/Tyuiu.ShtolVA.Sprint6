@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using Tyuiu.ShtolVA.Sprint6.Task0.V25.Lib;
 
 namespace Tyuiu.ShtolVA.Sprint6.Task0.V25
@@ -19,12 +18,23 @@ namespace Tyuiu.ShtolVA.Sprint6.Task0.V25
             InitializeComponent();
         }
 
-        private void buttoneExecute_SVA_Click(object sender, EventArgs e)
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDone_SVA_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
             try
             {
-                textBoxResult_SAS.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_SAS.Text)));
+
+                textBoxResult_SVA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxPerX_SVA.Text)));
             }
             catch
             {
@@ -32,12 +42,16 @@ namespace Tyuiu.ShtolVA.Sprint6.Task0.V25
             }
         }
 
-        private void buttonHelp_SAS_Click(object sender, EventArgs e)
+        private void buttonSpravka_SVA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 0 выполнила студентка группы ИИПб-23-1 Шпилевая Арина Станиславовна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 0 выполнила студентка группы ИИПб-23-3 Штоль Виктория Алексеевна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void textBoxVarX_SAS_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBoxUslovie_SVA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBoxVarX_SVA_KeyPress(object sender, KeyPressEventArgs e)
         {
             if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8))
             {
