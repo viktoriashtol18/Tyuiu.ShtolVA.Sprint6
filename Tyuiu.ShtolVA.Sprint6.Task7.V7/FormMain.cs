@@ -54,7 +54,7 @@ namespace Tyuiu.ShtolVA.Sprint6.Task7.V7
             FormAbout formAbout = new FormAbout();
             formAbout.ShowDialog();
         }
-        private void buttonOpenFile_SAS_Click(object sender, EventArgs e)
+        private void buttonOpenFile_SVA_Click(object sender, EventArgs e)
         {
             openFileDialogTask7_SVA.ShowDialog();
             openFilePath = openFileDialogTask7_SVA.FileName;
@@ -173,6 +173,8 @@ namespace Tyuiu.ShtolVA.Sprint6.Task7.V7
         {
 
         }
+
+      
     }
 }
 

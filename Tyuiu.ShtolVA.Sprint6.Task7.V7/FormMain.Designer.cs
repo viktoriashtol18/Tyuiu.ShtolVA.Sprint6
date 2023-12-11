@@ -85,6 +85,7 @@ namespace Tyuiu.ShtolVA.Sprint6.Task7.V7
             this.toolTipButton_SVA.SetToolTip(this.buttonHelp_SVA, " О программе");
             this.buttonHelp_SVA.UseVisualStyleBackColor = true;
             this.buttonHelp_SVA.Click += new System.EventHandler(this.buttonHelp_SVA_Click);
+            this.buttonHelp_SVA.MouseEnter += new System.EventHandler(this.buttonHelp_SVA_MouseEnter);
             // 
             // buttonSaveFile_SVA
             // 
@@ -98,6 +99,8 @@ namespace Tyuiu.ShtolVA.Sprint6.Task7.V7
             this.buttonSaveFile_SVA.TabIndex = 2;
             this.toolTipButton_SVA.SetToolTip(this.buttonSaveFile_SVA, "Сохранить обработанные данные в файл в формате CSV");
             this.buttonSaveFile_SVA.UseVisualStyleBackColor = true;
+            this.buttonSaveFile_SVA.Click += new System.EventHandler(this.buttonSaveFile_SVA_Click);
+            this.buttonSaveFile_SVA.MouseEnter += new System.EventHandler(this.buttonSaveFile_SVA_MouseEnter);
             // 
             // buttonDone_SVA
             // 
@@ -111,6 +114,8 @@ namespace Tyuiu.ShtolVA.Sprint6.Task7.V7
             this.buttonDone_SVA.TabIndex = 1;
             this.toolTipButton_SVA.SetToolTip(this.buttonDone_SVA, "Выполнить обработку данных");
             this.buttonDone_SVA.UseVisualStyleBackColor = true;
+            this.buttonDone_SVA.Click += new System.EventHandler(this.buttonDone_SVA_Click);
+            this.buttonDone_SVA.MouseEnter += new System.EventHandler(this.buttonDone_SVA_MouseEnter);
             // 
             // buttonOpenFile_SVA
             // 
@@ -122,6 +127,8 @@ namespace Tyuiu.ShtolVA.Sprint6.Task7.V7
             this.buttonOpenFile_SVA.TabIndex = 0;
             this.toolTipButton_SVA.SetToolTip(this.buttonOpenFile_SVA, "Открыть файл для обработки данных в формат СSV\r\n");
             this.buttonOpenFile_SVA.UseVisualStyleBackColor = true;
+            this.buttonOpenFile_SVA.Click += new System.EventHandler(this.buttonOpenFile_SVA_Click);
+            this.buttonOpenFile_SVA.MouseEnter += new System.EventHandler(this.buttonOpenFile_SVA_MouseEnter);
             // 
             // panelCondition_SVA
             // 
@@ -239,7 +246,6 @@ namespace Tyuiu.ShtolVA.Sprint6.Task7.V7
             // 
             this.toolTipButton_SVA.IsBalloon = true;
             this.toolTipButton_SVA.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTipButton_SVA.ToolTipTitle = "Открыть файл";
             // 
             // openFileDialogTask7_SVA
             // 
